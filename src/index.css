@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.normal {
+  color: rgb(23 23 23);
+  background-color: rgb(115 115 115);
+}
+.rock {
+  color: rgb(28 25 23);
+  background-color: rgb(120 113 108);
+}
+.fire {
+  color: rgb(127 29 29);
+  background-color: rgb(220 38 38);
+}
+.electric {
+  color: rgb(113 63 18);
+  background-color: rgb(250 204 21);
+}
+.grass {
+  color: rgb(20 83 45);
+  background-color: rgb(34 197 94);
+}
+.bug {
+  color: rgb(54 83 20);
+  background-color: rgb(163 230 53);
+}
+.poison {
+  color: rgb(112 26 117);
+  background-color: rgb(217 70 239);
+}
+.fairy {
+  color: rgb(136 19 55);
+  background-color: rgb(244 63 94);
+}
+.psychic {
+  color: rgb(88 28 135);
+  background-color: rgb(168 85 247);
+}
+.ghost {
+  color: rgb(131 24 67);
+  background-color: rgb(236 72 153);
+}
+.ice {
+  color: rgb(30 58 138);
+  background-color: rgb(59 130 246);
+}
+.water {
+  color: rgb(22 78 99);
+  background-color: rgb(6 182 212);
+}
+.ground {
+  color: rgb(120 53 15);
+  background-color: rgb(245 158 11);
+}
+.flying {
+  color: rgb(19 78 74);
+  background-color: rgb(20 184 166);
+}
+
+.fighting {
+  color: rgb(24 24 27);
+  background-color: rgb(113 113 122);
+}
