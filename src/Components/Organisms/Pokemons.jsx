@@ -10,7 +10,7 @@ function AppRest(limit) {
 }
 
 export default function Pokemons() {
-  const [limit, setLimit] = useState(0);
+  const [limit, setLimit] = useState(20);
   const [pokemonsList, setPokemonsList] = useState([]);
 
   function handleMore() {
