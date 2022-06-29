@@ -7,7 +7,7 @@ export default function App() {
     <>
       <ModalContextProvider>
         <Header />
-        <main className="flex justify-center">
+        <main className="flex justify-center bg-slate-100">
           <Pokemons />
         </main>
         <Footer />

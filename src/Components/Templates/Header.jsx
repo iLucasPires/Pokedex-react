@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Header() {
   return (
-    <header className="w-screen flex flex-col items-center justify-between gap-2 py-2">
+    <header className="w-screen flex flex-col items-center justify-between gap-2 py-2 bg-slate-100">
       <a className="logo">
         <img
           className="block h-16"

@@ -5,29 +5,27 @@ import axios from "axios";
 import ListPokemons from "../Atoms/ListPokemons";
 import ButtonMore from "../Atoms/ButtonMore";
 
-function AppRest(offset) {
-  return `https://pokeapi.co/api/v2/pokemon?limit=${20}&offset=${offset}`;
+function AppRest(limit) {
+  return `https://pokeapi.co/api/v2/pokemon?limit=${limit}&offset=0`;
 }
 
 export default function Pokemons() {
-  //   const [limit, setLimit] = useState(20);
-  const [offset, SetOffset] = useState(0);
+  const [limit, setLimit] = useState(0);
   const [pokemonsList, setPokemonsList] = useState([]);
 
   function handleMore() {
-    SetOffset((offset) => offset + 20);
-    // setLimit((state) => state + 20);
+    setLimit((limit) => limit + 20);
   }
 
   const getAswer = async () => {
-    const { data } = await axios(AppRest(offset));
+    const { data } = await axios(AppRest(limit));
     console.log(data);
     setPokemonsList(data);
   };
 
   useEffect(() => {
     getAswer();
-  }, [offset]);
+  }, [limit]);
 
   if (!pokemonsList.results) {
     return <LoadingScreen />;
