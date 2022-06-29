@@ -11,7 +11,7 @@ export default function Modal({ activeModal, setModal, dataModal }) {
       onClick={handleOutsideClick}
     >
       <div
-        className={`h-[90vh] w-[30vw] ${dataModal.types[0].type.name} rounded flex flex-col  items-center transition p-2 border-4`}
+        className={`md:h-[90vh] md:w-[30vw] w-[90vw] h-[90vh] ${dataModal.types[0].type.name} rounded flex flex-col  items-center transition p-2 border-4`}
       >
         <div className="flex relative h-28 w-full flex-col items-center">
           <p>{dataModal.game_indices[0].game_index}</p>
