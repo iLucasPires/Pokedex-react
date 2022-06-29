@@ -2,73 +2,98 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   color-scheme: dark;
-}
+} */
 
 * {
   box-sizing: border-box;
   list-style: none;
 }
 
+ul {
+  overflow-y: auto;
+}
+
+body,
+html,
+#app {
+  overflow-x: hidden;
+}
+
 .normal {
   color: rgb(23 23 23);
-  background-color: rgb(115 115 115);
+  border-color: rgb(115 115 115);
+  background-color: rgba(115, 115, 115, 0.3);
 }
 .rock {
   color: rgb(28 25 23);
-  background-color: rgb(120 113 108);
+  border-color: rgb(120 113 108);
+  background-color: rgba(120, 113, 108, 0.3);
 }
 .fire {
   color: rgb(127 29 29);
-  background-color: rgb(220 38 38);
+  border-color: rgb(220 38 38);
+  background-color: rgba(220, 38, 38, 0.3);
 }
 .electric {
   color: rgb(113 63 18);
-  background-color: rgb(250 204 21);
+  border-color: rgb(250 204 21);
+  background-color: rgba(250, 204, 21, 0.3);
 }
 .grass {
   color: rgb(20 83 45);
-  background-color: rgb(34 197 94);
+  border-color: rgb(34 197 94);
+  background-color: rgba(34, 197, 94, 0.3);
 }
 .bug {
   color: rgb(54 83 20);
-  background-color: rgb(163 230 53);
+  border-color: rgb(163 230 53);
+  background-color: rgba(162, 230, 53, 0.3);
 }
 .poison {
   color: rgb(112 26 117);
-  background-color: rgb(217 70 239);
+  border-color: rgb(217 70 239);
+  background-color: rgba(120, 7, 138, 0.3);
 }
 .fairy {
   color: rgb(136 19 55);
-  background-color: rgb(244 63 94);
+  border-color: rgb(244 63 94);
+  background-color: rgba(148, 16, 38, 0.3);
 }
 .psychic {
   color: rgb(88 28 135);
-  background-color: rgb(168 85 247);
+  border-color: rgb(168 85 247);
+  background-color: rgba(169, 85, 247, 0.3);
 }
 .ghost {
   color: rgb(131 24 67);
-  background-color: rgb(236 72 153);
+  border-color: rgb(236 72 153);
+  background-color: rgba(236, 72, 154, 0.3);
 }
 .ice {
   color: rgb(30 58 138);
-  background-color: rgb(59 130 246);
+  border-color: rgb(59 130 246);
+  background-color: rgba(59, 131, 246, 0.3);
 }
 .water {
   color: rgb(22 78 99);
-  background-color: rgb(6 182 212);
+  border-color: rgb(6 182 212);
+  background-color: rgba(6, 181, 212, 0.3);
 }
 .ground {
   color: rgb(120 53 15);
-  background-color: rgb(245 158 11);
+  border-color: rgb(245 158 11);
+  background-color: rgba(245, 159, 11, 0.3);
 }
 .flying {
   color: rgb(19 78 74);
-  background-color: rgb(20 184 166);
+  border-color: rgb(20 184 166);
+  background-color: rgba(20, 184, 165, 0.3);
 }
 
 .fighting {
   color: rgb(24 24 27);
-  background-color: rgb(113 113 122);
+  border-color: rgb(113 113 122);
+  background-color: rgba(113, 113, 122, 0.3);
 }

@@ -1,13 +1,17 @@
-import ListPokemons from "./Components/PokemonList";
-import { SiPokemon } from "react-icons/si";
+import Pokemons from "./Components/Organisms/Pokemons";
+import Footer from "./Components/Templates/Footer";
+import Header from "./Components/Templates/Header";
+import ModalContextProvider from "./Context/ModalContext"
 export default function App() {
   return (
     <>
-      <header className="flex justify-center bg-red-800 h-20" >
-      </header>
-      <main className="">
-        <ListPokemons/>
-      </main>
+      <ModalContextProvider>
+        <Header />
+        <main className="flex justify-center">
+          <Pokemons />
+        </main>
+        <Footer />
+      </ModalContextProvider>
     </>
   );
 }
